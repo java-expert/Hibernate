@@ -4,9 +4,9 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   
  <hibernate-mapping>  
-  <class name="Employee" table="emp">  
+  <class name="Employee" table="emp" dynamic-update="false">  
     <id name="id">  
-     <generator class="assigned"></generator>  
+     <generator class="increment"></generator>  
     </id>  
             
     <property name="name"></property>  

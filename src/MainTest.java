@@ -23,11 +23,13 @@ public class MainTest {
 		//s.getSessionFactory().
 		s.getSessionFactory().getStatistics().logSummary();
 		Transaction t= s.beginTransaction();
-	Employee e=new Employee();
+/*	Employee e=new Employee();
 	e.setId(1);
 	e.setName("abc");
 	e.setSalary(1234);
-	s.save(e);
+	s.save(e);*/
+		Employee e=(Employee) s.get(Employee.class, 1);
+		e.setName("erd");
 		t.commit();
 		}catch (Exception e) {
 			e.printStackTrace();

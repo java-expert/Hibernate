@@ -1,0 +1,1 @@
+1. dynamic-update="true" at class level helps to include only updates columns in update query instead of all
