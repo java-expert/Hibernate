@@ -4,7 +4,14 @@ public class Employee {
 	
 	private int id;
 	private String name;
-	private int salary;
+	private Integer salary;
+	private String address;
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 	public int getId() {
 		return id;
 	}
@@ -17,10 +24,10 @@ public class Employee {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getSalary() {
+	public Integer getSalary() {
 		return salary;
 	}
-	public void setSalary(int salary) {
+	public void setSalary(Integer salary) {
 		this.salary = salary;
 	}
 	

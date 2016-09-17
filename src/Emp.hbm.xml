@@ -4,13 +4,14 @@
  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
   
  <hibernate-mapping>  
-  <class name="Employee" table="emp" dynamic-update="false">  
+  <class name="Employee" table="emp"  dynamic-update="true" dynamic-insert="true">  
     <id name="id">  
      <generator class="increment"></generator>  
     </id>  
             
     <property name="name"></property>  
     <property name="salary"></property>  
+    <property name="address"></property>  
             
   </class>  
             

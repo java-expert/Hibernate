@@ -1,1 +1,7 @@
 1. dynamic-update="true" at class level helps to include only updates columns in update query instead of all
+
+2. dynamic-insert="true" at class level hels to include not null column in insert query instead of all with null values
+if we use int at class level, even not set will be included as its value is 0,
+if we use Integer at class level, due to null value i will not be included in query for dynamic insert
+
+3. 
