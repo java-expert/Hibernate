@@ -7,3 +7,18 @@ There are four fetching strategies
 3. batch-size=”N” = Fetching up to ‘N’ collections or entities, *Not record*.
 4. fetch-“subselect” = Group its collection into a sub select statement.
 =========================================================================================
+
+A Component mapping is a mapping for a class having a reference to another class as a
+ member variable. We have seen such mapping while having two tables and using <set>
+ element in the mapping file. Now we will use <component> element in the mapping file
+ and a single table would be used to keep the attributes contained inside the class
+ variable.
+ ======================================================================================
+ 
+ Hibernate Inheritance 
+ There are three inheritance mapping strategies defined in the hibernate:
+
+    Table Per Hierarchy ---------- discriminator
+    Table Per Concrete class -------- union-subclass
+    Table Per Subclass -------- joined-subclass
+ 
